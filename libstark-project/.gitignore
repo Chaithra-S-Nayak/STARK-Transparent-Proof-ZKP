@@ -1,0 +1,33 @@
+# Ignore build directory
+/build/
+
+# Ignore CMake build files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore executable files
+*.exe
+*.out
+*.app
+
+# Ignore temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+
+# Ignore backup files
+*.bak
+*.old
+*.orig
+
+# Ignore generated files
+*.d
+*.dSYM/
+*.DS_Store
