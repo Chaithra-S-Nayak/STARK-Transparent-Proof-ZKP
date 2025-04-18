@@ -12,14 +12,12 @@ This project implements a **transparent proof system** using LibSTARK, which eli
 ## Project Structure
 
 - **src/**: Contains the source code for the project.
-  - **randomness/**: Implements functionality for generating public randomness.
-    - **public_randomness.cpp**: Methods for creating verifiable random functions (VRFs) and obtaining unbiased public sources.
-  - **constraints/**: Logic for mapping computations to polynomial constraints.
-    - **arithmetization.cpp**: Functions for arithmetization and encoding operations into polynomial representations.
-  - **proofs/**: Handles proof generation and verification.
-    - **proof_verification.cpp**: Methods for generating and verifying proofs using LibSTARK.
-  - **utils/**: Provides utility functions for various operations.
-    - **helpers.cpp**: Contains cryptographic functions and other helper methods.
+  - **randomness/**: Handles generation of public randomness.
+    - **public_randomness.h**: Defines the `PublicRandomness` class for generating transparent randomness.
+    - **public_randomness.cpp**: Implements blockchain-based randomness generation.
+  - **constraints/**: Defines and evaluates polynomial constraints.
+    - **polynomial_constraints.h**: Defines the `PolynomialConstraints` class for constraint handling.
+    - **polynomial_constraints.cpp**: Implements constraint evaluation and verification logic.
+    - **test_polynomial_constraints.cpp**: Test cases for the polynomial constraint functionality.
 
 - **CMakeLists.txt**: Configuration file for CMake, specifying project structure, dependencies, and build instructions.
-- **README.md**: Documentation for the project, including setup instructions, usage, and objectives.
